@@ -1,0 +1,106 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+
+/* Base Styles */
+html, body, [class*="css"] {
+      font-family: 'Outfit', sans-serif;
+      color: #f0f2f6;
+      background: #0e1117; /* Dark background */
+}
+
+/* Glassmorphism Containers */
+.stApp {
+      background-image: linear-gradient(135deg, #0e1117 0%, #161b22 100%);
+}
+
+div[data-testid="stBlock"] {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 16px;
+      padding: 20px;
+      backdrop-filter: blur(10px);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+div[data-testid="stBlock"]:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+      border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Headers */
+h1 {
+      font-weight: 700;
+      color: #ffffff;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+      background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      padding-bottom: 10px;
+}
+
+h2, h3 {
+      font-weight: 600;
+      color: #e0e0e0;
+}
+
+/* Interactive Elements */
+div[data-testid="stFileUploader"] {
+      border: 2px dashed rgba(255, 255, 255, 0.2);
+      border-radius: 12px;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.01);
+}
+
+button[kind="primary"] {
+      background: linear-gradient(90deg, #FF416C 0%, #FF4B2B 100%);
+      border: none;
+      border-radius: 8px;
+      color: white;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(255, 75, 43, 0.3);
+}
+
+button[kind="primary"]:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(255, 75, 43, 0.5);
+}
+
+button[kind="secondary"] {
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: #e0e0e0;
+}
+
+/* Metrics */
+div[data-testid="stMetricValue"] {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #4facfe;
+}
+
+div[data-testid="stMetricLabel"] {
+      font-size: 0.9rem;
+      color: #a0a0a0;
+}
+
+/* Dataframe */
+[data-testid="stDataFrame"] {
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+}
+::-webkit-scrollbar-track {
+      background: #0e1117;
+}
+::-webkit-scrollbar-thumb {
+      background: #4facfe;
+      border-radius: 4px;
+}
